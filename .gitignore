@@ -1,0 +1,8 @@
+data
+.ipynb_checkpoints/
+*/.*_checkpoints/
+/.*_checkpoints/
+*/*_logs
+*/*.h5
+**/__pycache__
+**/*_ckpt/
