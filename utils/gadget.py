@@ -1,25 +1,3 @@
-gadget.py
-Who has access
-
-System properties
-Type
-Text
-Size
-2 KB
-Storage used
-3 KB
-Location
-utils
-Owner
-me
-Modified
-5:28 PM by me
-Opened
-6:22 PM by me
-Created
-2:57 PM with Google Drive Web
-Add a description
-Viewers can download
 import pandas as pd
 import numpy as np
 

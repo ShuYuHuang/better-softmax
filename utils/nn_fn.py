@@ -1,25 +1,3 @@
-nn_fn.py
-Who has access
-
-System properties
-Type
-Text
-Size
-6 KB
-Storage used
-13 KB
-Location
-utils
-Owner
-me
-Modified
-5:26 PM by me
-Opened
-6:22 PM by me
-Created
-2:57 PM with Google Drive Web
-Add a description
-Viewers can download
 import torch
 from torch import nn
 import torch.nn.functional as F
