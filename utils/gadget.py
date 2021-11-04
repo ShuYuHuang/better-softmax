@@ -53,5 +53,5 @@ class Rec():
             scaleanchor = "x",
             scaleratio = 1,
         )
-        fig.show()
+#         fig.show()
         return fig

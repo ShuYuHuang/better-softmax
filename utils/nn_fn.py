@@ -1,6 +1,7 @@
 import torch
 from torch import nn
 import torch.nn.functional as F
+import math
 
 class AddMarginProduct(nn.Module):
     """Implement of large margin cosine distance: :
