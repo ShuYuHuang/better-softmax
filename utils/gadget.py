@@ -47,11 +47,10 @@ class Rec():
 
     def __repr__(self):
         fig=px.scatter(self.df, x="f1", y="f2", animation_frame="iterations", color="label",opacity=self.df.arc,
-              range_x=[-1.5,1.5],
-              range_y=[-1.5,1.5], width=800, height=800)
+                range_x=[-1.5,1.5],
+              range_y=[-1.5,1.5])
         fig.update_yaxes(
             scaleanchor = "x",
             scaleratio = 1,
         )
-#         fig.show()
         return fig

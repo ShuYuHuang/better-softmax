@@ -65,6 +65,7 @@ class ArcMarginProduct(nn.Module):
         self.th = math.cos(math.pi - m)
         self.mm = math.sin(math.pi - m) * m
         self.eps = torch.tensor(1e-10,dtype=torch.float32)
+        
     def forward(self, x, label=None):
         # cos(theta)
         cosine = F.linear(F.normalize(x), F.normalize(self.weight))
