@@ -152,17 +152,3 @@ class FocalLoss(nn.Module):
         loss = (1 - p) ** self.gamma * logp
         return loss.mean()
     
-class FocalLoss(nn.Module):
-    def __init__(self, gamma=0, eps=1e-10):
-        super(FocalLoss, self).__init__()
-        self.gamma = gamma
-        self.eps = torch.tensor(eps,dtype=torch.float32)
-        self.ce = torch.nn.CrossEntropyLoss()
-
-    def forward(self, input, target):
-        logp = self.ce(input+self.eps, target)
-        p = torch.exp(-logp)
-        loss = (1 - p) ** self.gamma * logp
-        return loss.mean()
-def mean_acc(pred,y):
-    return (pred.argmax(-1)==y).type(torch.float32).mean().item()
